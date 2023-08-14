@@ -3,7 +3,6 @@
 
 # NYC High Schools Information App
 
-![App Screenshots](screenshots.png)
 
 This native iOS app allows users to access information about NYC High Schools, including a list of schools and their SAT scores.
 
@@ -27,13 +26,6 @@ This native iOS app allows users to access information about NYC High Schools, i
 2. Open the Xcode project.
 3. Build and run the app on the desired iOS simulator or device.
 
-## Screenshots
-
-![Screenshot 1](screenshots/screenshot1.png)
-*List of NYC High Schools*
-
-![Screenshot 2](screenshots/screenshot2.png)
-*School Details with SAT scores*
 
 ## Code Structure
 
