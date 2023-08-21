@@ -12,6 +12,11 @@ class ViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+    let schoolServiceURL = "https://data.cityofnewyork.us/resource/f9bf-2cp4.json"
+    let schoolDetailsServiceURL = "https://data.cityofnewyork.us/resource/s3k6-pzi2.json"
+    
+    let apiClient = APIClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white.withAlphaComponent(0.7)
@@ -22,30 +27,33 @@ class ViewController: UIViewController {
         fetchSchoolDetailData()
     }
     private func fetchSchoolData() {
-        SchoolService().getSchools { (result) in
-            switch result {
-            case .success(let schools):
-                DispatchQueue.main.async {
-                    self.activityIndicator.stopAnimating()
-                    self.schoolViewModel.schools = schools
-                    self.tableView.reloadData()
+        
+        if let url = URL(string: schoolServiceURL) {
+            apiClient.fetch(url) { (result: Result<[School], APIError>) in
+                switch result {
+                case .success(let schools):
+                    DispatchQueue.main.async {
+                        self.activityIndicator.stopAnimating()
+                        self.schoolViewModel.schools = schools
+                        self.tableView.reloadData()
+                    }                case .failure(let error):
+                    print("Error: \(error)")
                 }
-            case .failure(let error):
-                print("Error:", error.localizedDescription)
             }
-        }
-    }
+        }    }
     
     private func fetchSchoolDetailData() {
-        SchoolService().getSchoolDetails { (result) in
-            switch result {
-            case .success(let schoolDetails):
-                DispatchQueue.main.async {
-                    self.activityIndicator.stopAnimating()
-                    self.schoolViewModel.schoolDetails = schoolDetails
+        
+        if let url = URL(string: schoolDetailsServiceURL) {
+            apiClient.fetch(url) { (result: Result<[SchoolDetails], APIError>) in
+                switch result {
+                case .success(let schoolDetails):
+                    DispatchQueue.main.async {
+                        self.activityIndicator.stopAnimating()
+                        self.schoolViewModel.schoolDetails = schoolDetails
+                    }                case .failure(let error):
+                    print("Error: \(error)")
                 }
-            case .failure(let error):
-                print("Error:", error.localizedDescription)
             }
         }
     }

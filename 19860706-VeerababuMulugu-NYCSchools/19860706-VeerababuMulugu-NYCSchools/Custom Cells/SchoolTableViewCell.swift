@@ -24,7 +24,7 @@ class SchoolTableViewCell: UITableViewCell {
         containerView.layer.shadowOffset = CGSize(width: 0, height: 2)
         containerView.layer.shadowRadius = 2
         containerView.layer.shadowColor = UIColor.black.withAlphaComponent(0.5).cgColor
-        containerView.layer.masksToBounds = false
+        containerView .layer.masksToBounds = false
     }
     
     func setData(school: School) {
