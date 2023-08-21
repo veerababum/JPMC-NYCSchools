@@ -21,27 +21,35 @@ class ViewController: UIViewController {
         fetchSchoolData()
         fetchSchoolDetailData()
     }
-    
     private func fetchSchoolData() {
-        activityIndicator.startAnimating()
-        SchoolService().getSchools(completionHandler: { [weak self] schools in
-            DispatchQueue.main.async {
-                self?.activityIndicator.stopAnimating()
-                self?.schoolViewModel.schools = schools
-                self?.tableView.reloadData()
+        SchoolService().getSchools { (result) in
+            switch result {
+            case .success(let schools):
+                DispatchQueue.main.async {
+                    self.activityIndicator.stopAnimating()
+                    self.schoolViewModel.schools = schools
+                    self.tableView.reloadData()
+                }
+            case .failure(let error):
+                print("Error:", error.localizedDescription)
             }
-        })
+        }
     }
     
     private func fetchSchoolDetailData() {
-        activityIndicator.startAnimating()
-        SchoolService().getSchoolDetails(completionHandler: { [weak self] schoolDetails in
-            DispatchQueue.main.async {
-                self?.activityIndicator.stopAnimating()
-                self?.schoolViewModel.schoolDetails = schoolDetails
+        SchoolService().getSchoolDetails { (result) in
+            switch result {
+            case .success(let schoolDetails):
+                DispatchQueue.main.async {
+                    self.activityIndicator.stopAnimating()
+                    self.schoolViewModel.schoolDetails = schoolDetails
+                }
+            case .failure(let error):
+                print("Error:", error.localizedDescription)
             }
-        })
+        }
     }
+    
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
