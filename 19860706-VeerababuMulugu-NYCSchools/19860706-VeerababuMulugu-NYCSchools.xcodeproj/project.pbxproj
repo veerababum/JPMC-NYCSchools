@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09BAE8572A93F0B800E85028 /* SATScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAE8562A93F0B800E85028 /* SATScore.swift */; };
 		AC728C57265624650084953C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C56265624650084953C /* AppDelegate.swift */; };
 		AC728C59265624650084953C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C58265624650084953C /* SceneDelegate.swift */; };
 		AC728C5B265624650084953C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C5A265624650084953C /* ViewController.swift */; };
@@ -16,13 +17,11 @@
 		AC728C6E2656246A0084953C /* _9860706_VeerababuMulugu_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C6D2656246A0084953C /* _9860706_VeerababuMulugu_NYCSchoolsTests.swift */; };
 		AC728C792656246A0084953C /* _9860706_VeerababuMulugu_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C782656246A0084953C /* _9860706_VeerababuMulugu_NYCSchoolsUITests.swift */; };
 		AC728C88265627C00084953C /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C87265627C00084953C /* School.swift */; };
-		AC728C8B26562AF40084953C /* SchoolService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C8A26562AF40084953C /* SchoolService.swift */; };
+		AC728C8B26562AF40084953C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C8A26562AF40084953C /* APIClient.swift */; };
 		AC728C8E265641660084953C /* SchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C8C265641660084953C /* SchoolTableViewCell.swift */; };
 		AC728C8F265641660084953C /* SchoolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC728C8D265641660084953C /* SchoolTableViewCell.xib */; };
-		AC728C92265696C00084953C /* SchoolDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C91265696C00084953C /* SchoolDetails.swift */; };
 		AC728C9426569B380084953C /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C9326569B380084953C /* SchoolDetailsViewController.swift */; };
 		AC728C972656A8DB0084953C /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C962656A8DB0084953C /* SchoolViewModel.swift */; };
-		AC728C992656A8E80084953C /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C982656A8E80084953C /* SchoolDetailsViewModel.swift */; };
 		AC728C9B2656E00A0084953C /* SchoolDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C9A2656E00A0084953C /* SchoolDetailsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09BAE8562A93F0B800E85028 /* SATScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScore.swift; sourceTree = "<group>"; };
 		AC728C53265624650084953C /* 19860706-VeerababuMulugu-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "19860706-VeerababuMulugu-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC728C56265624650084953C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC728C58265624650084953C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,13 +59,11 @@
 		AC728C782656246A0084953C /* _9860706_VeerababuMulugu_NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9860706_VeerababuMulugu_NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		AC728C7A2656246A0084953C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC728C87265627C00084953C /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
-		AC728C8A26562AF40084953C /* SchoolService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolService.swift; sourceTree = "<group>"; };
+		AC728C8A26562AF40084953C /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		AC728C8C265641660084953C /* SchoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTableViewCell.swift; sourceTree = "<group>"; };
 		AC728C8D265641660084953C /* SchoolTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchoolTableViewCell.xib; sourceTree = "<group>"; };
-		AC728C91265696C00084953C /* SchoolDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetails.swift; sourceTree = "<group>"; };
 		AC728C9326569B380084953C /* SchoolDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewController.swift; sourceTree = "<group>"; };
 		AC728C962656A8DB0084953C /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
-		AC728C982656A8E80084953C /* SchoolDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewModel.swift; sourceTree = "<group>"; };
 		AC728C9A2656E00A0084953C /* SchoolDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				AC728C87265627C00084953C /* School.swift */,
-				AC728C91265696C00084953C /* SchoolDetails.swift */,
+				09BAE8562A93F0B800E85028 /* SATScore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,7 +162,7 @@
 		AC728C8926562ADC0084953C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				AC728C8A26562AF40084953C /* SchoolService.swift */,
+				AC728C8A26562AF40084953C /* APIClient.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -182,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				AC728C962656A8DB0084953C /* SchoolViewModel.swift */,
-				AC728C982656A8E80084953C /* SchoolDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -249,8 +246,9 @@
 		AC728C4B265624650084953C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Srinivas;
 				TargetAttributes = {
 					AC728C52265624650084953C = {
@@ -322,12 +320,11 @@
 				AC728C5B265624650084953C /* ViewController.swift in Sources */,
 				AC728C8E265641660084953C /* SchoolTableViewCell.swift in Sources */,
 				AC728C57265624650084953C /* AppDelegate.swift in Sources */,
-				AC728C992656A8E80084953C /* SchoolDetailsViewModel.swift in Sources */,
+				09BAE8572A93F0B800E85028 /* SATScore.swift in Sources */,
 				AC728C9426569B380084953C /* SchoolDetailsViewController.swift in Sources */,
 				AC728C59265624650084953C /* SceneDelegate.swift in Sources */,
-				AC728C92265696C00084953C /* SchoolDetails.swift in Sources */,
 				AC728C972656A8DB0084953C /* SchoolViewModel.swift in Sources */,
-				AC728C8B26562AF40084953C /* SchoolService.swift in Sources */,
+				AC728C8B26562AF40084953C /* APIClient.swift in Sources */,
 				AC728C88265627C00084953C /* School.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +407,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -470,6 +468,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

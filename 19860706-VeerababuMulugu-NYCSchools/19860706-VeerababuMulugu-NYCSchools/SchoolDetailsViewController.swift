@@ -17,25 +17,43 @@ class SchoolDetailsViewController: UIViewController {
     @IBOutlet weak var readingLabel: UILabel!
     @IBOutlet weak var wrintingLabel: UILabel!
     @IBOutlet weak var mathLabel: UILabel!
+    private let schoolDetailsUrl = "https://data.cityofnewyork.us/resource/f9bf-2cp4.json"
 
-    var schoolDetailsViewModel: SchoolDetailsViewModel!
     var school: School!
+    let apiClient = APIClient()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "SAT Score"
         setupData()
+       // fetchSchoolDetailData()
     }
     
+//        private func fetchSchoolDetailData() {
+//
+//            if let url = URL(string: schoolDetailsUrl) {
+//                apiClient.fetch(url) { (result: Result<[SATScore], APIError>) in
+//                    switch result {
+//                    case .success(let schoolDetails):
+//                        DispatchQueue.main.async {
+//                           // self.activityIndicator.stopAnimating()
+////                            self.schoolViewModel.schoolDetails = schoolDetails
+//                        }                case .failure(let error):
+//                        print("Error: \(error)")
+//                    }
+//                }
+//            }
+//        }
+    
     private func setupData() {
-        schoolLabel.text = schoolDetailsViewModel.schoolName
-        overviewLabel.text = schoolDetailsViewModel.overview
-        opportunitiesLabel.text = schoolDetailsViewModel.opportunities
-        websiteLabel.text = schoolDetailsViewModel.website
-        addressLabel.text = schoolDetailsViewModel.address
-        readingLabel.text = "Reading: \(school.sat_critical_reading_avg_score)"
-        wrintingLabel.text = "Writing: \(school.sat_critical_reading_avg_score)"
-        mathLabel.text = "Math: \(school.sat_math_avg_score)"
+//        schoolLabel.text = school.schoolName
+//        overviewLabel.text = school.overview
+//        opportunitiesLabel.text = school.opportunities
+//        websiteLabel.text = school.website
+//        addressLabel.text = school.address
+//        readingLabel.text = "Reading: \(school.sat_critical_reading_avg_score)"
+//        wrintingLabel.text = "Writing: \(school.sat_critical_reading_avg_score)"
+//        mathLabel.text = "Math: \(school.sat_math_avg_score)"
     }
     
 }
