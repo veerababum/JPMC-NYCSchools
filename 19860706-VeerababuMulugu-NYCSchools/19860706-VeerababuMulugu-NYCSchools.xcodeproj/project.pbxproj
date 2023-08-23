@@ -10,7 +10,7 @@
 		09BAE8572A93F0B800E85028 /* SATScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAE8562A93F0B800E85028 /* SATScore.swift */; };
 		AC728C57265624650084953C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C56265624650084953C /* AppDelegate.swift */; };
 		AC728C59265624650084953C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C58265624650084953C /* SceneDelegate.swift */; };
-		AC728C5B265624650084953C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C5A265624650084953C /* ViewController.swift */; };
+		AC728C5B265624650084953C /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC728C5A265624650084953C /* SchoolViewController.swift */; };
 		AC728C5E265624650084953C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC728C5C265624650084953C /* Main.storyboard */; };
 		AC728C602656246A0084953C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC728C5F2656246A0084953C /* Assets.xcassets */; };
 		AC728C632656246A0084953C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC728C612656246A0084953C /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 		AC728C53265624650084953C /* 19860706-VeerababuMulugu-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "19860706-VeerababuMulugu-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC728C56265624650084953C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC728C58265624650084953C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC728C5A265624650084953C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC728C5A265624650084953C /* SchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewController.swift; sourceTree = "<group>"; };
 		AC728C5D265624650084953C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC728C5F2656246A0084953C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC728C622656246A0084953C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				AC728C86265624830084953C /* Models */,
 				AC728C56265624650084953C /* AppDelegate.swift */,
 				AC728C58265624650084953C /* SceneDelegate.swift */,
-				AC728C5A265624650084953C /* ViewController.swift */,
+				AC728C5A265624650084953C /* SchoolViewController.swift */,
 				AC728C9326569B380084953C /* SchoolDetailsViewController.swift */,
 				AC728C5C265624650084953C /* Main.storyboard */,
 				AC728C5F2656246A0084953C /* Assets.xcassets */,
@@ -317,7 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC728C5B265624650084953C /* ViewController.swift in Sources */,
+				AC728C5B265624650084953C /* SchoolViewController.swift in Sources */,
 				AC728C8E265641660084953C /* SchoolTableViewCell.swift in Sources */,
 				AC728C57265624650084953C /* AppDelegate.swift in Sources */,
 				09BAE8572A93F0B800E85028 /* SATScore.swift in Sources */,

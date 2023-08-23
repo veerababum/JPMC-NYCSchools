@@ -9,6 +9,8 @@ import UIKit
 
 class SchoolDetailsViewController: UIViewController {
     
+    private var viewModel: SchoolViewModel!
+
     @IBOutlet weak var schoolLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
     @IBOutlet weak var opportunitiesLabel: UILabel!
@@ -25,25 +27,29 @@ class SchoolDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "SAT Score"
+        
+        if school != nil {
+            print("selected school is \(school)")
+            // Populate your views using the school object
+        }
         setupData()
-       // fetchSchoolDetailData()
+        fetchSchoolDetailData()
     }
     
-//        private func fetchSchoolDetailData() {
-//
-//            if let url = URL(string: schoolDetailsUrl) {
-//                apiClient.fetch(url) { (result: Result<[SATScore], APIError>) in
-//                    switch result {
-//                    case .success(let schoolDetails):
-//                        DispatchQueue.main.async {
-//                           // self.activityIndicator.stopAnimating()
-////                            self.schoolViewModel.schoolDetails = schoolDetails
-//                        }                case .failure(let error):
-//                        print("Error: \(error)")
-//                    }
-//                }
-//            }
-//        }
+        private func fetchSchoolDetailData() {
+
+            if let url = URL(string: schoolDetailsUrl) {
+                apiClient.fetch(url) { (result: Result<[SATScore], APIError>) in
+                    switch result {
+                    case .success(let schoolDetails):
+                        DispatchQueue.main.async {
+//                            self.schoolViewModel.schoolDetails = schoolDetails
+                        }                case .failure(let error):
+                        print("Error: \(error)")
+                    }
+                }
+            }
+        }
     
     private func setupData() {
 //        schoolLabel.text = school.schoolName

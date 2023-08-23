@@ -7,17 +7,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2DFF2B82-545E-4E62-922C-9B6D259038F4"
+            uuid = "D3480A90-EF97-4087-BED3-86A1BBA7033A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "19860706-VeerababuMulugu-NYCSchools/Services/APIClient.swift"
+            filePath = "19860706-VeerababuMulugu-NYCSchools/SchoolDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "fetch(_:completion:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3480A90-EF97-4087-BED3-86A1BBA7033A - c6439ae4e5421977"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9860706_VeerababuMulugu_NYCSchools.SchoolDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "19860706-VeerababuMulugu-NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/JPMC-NYCSchools/19860706-VeerababuMulugu-NYCSchools/19860706-VeerababuMulugu-NYCSchools/SchoolDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "218">
+               </Location>
+               <Location
+                  uuid = "D3480A90-EF97-4087-BED3-86A1BBA7033A - c6439ae4e5421977"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9860706_VeerababuMulugu_NYCSchools.SchoolDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "19860706-VeerababuMulugu-NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/JPMC-NYCSchools/19860706-VeerababuMulugu-NYCSchools/19860706-VeerababuMulugu-NYCSchools/SchoolDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "274">
+               </Location>
+               <Location
+                  uuid = "D3480A90-EF97-4087-BED3-86A1BBA7033A - c6439ae4e54219d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9860706_VeerababuMulugu_NYCSchools.SchoolDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "19860706-VeerababuMulugu-NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/JPMC-NYCSchools/19860706-VeerababuMulugu-NYCSchools/19860706-VeerababuMulugu-NYCSchools/SchoolDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "857">
+               </Location>
+               <Location
+                  uuid = "D3480A90-EF97-4087-BED3-86A1BBA7033A - c6439ae4e542180c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9860706_VeerababuMulugu_NYCSchools.SchoolDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "19860706-VeerababuMulugu-NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/JPMC-NYCSchools/19860706-VeerababuMulugu-NYCSchools/19860706-VeerababuMulugu-NYCSchools/SchoolDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "857">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
